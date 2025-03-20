@@ -1,22 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.hpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkomba <gkomba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/19 18:16:01 by gkomba            #+#    #+#             */
-/*   Updated: 2025/03/20 08:29:11 by gkomba           ###   ########.fr       */
+/*   Created: 2025/03/20 12:24:30 by gkomba            #+#    #+#             */
+/*   Updated: 2025/03/20 12:44:17 by gkomba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER_H
-# define HEADER_H
+#ifndef HARL_H
+#define HARL_H
 
-# include <iostream>
-# include <fstream>
-# include <string>
+#include <iostream>
+#include <string>
 
-int ft_replaceInFile(const std::string &filename, const std::string &s1, const std::string &s2);
+class Harl
+{
+    private:
+        void    debug(void);
+        void    info(void);
+        void    warning(void);
+        void    error(void);
+
+    public:
+        Harl();
+        void    complain(std::string level);
+        ~Harl();
+};
 
 #endif

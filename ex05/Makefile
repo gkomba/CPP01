@@ -1,5 +1,7 @@
-NAME=pointerToFunctions
-SRC=ponteir_to_functions.cpp
+NAME=Harl
+SRC=main.cpp\
+	Harl.cpp\
+
 OBJ=${SRC:.cpp=.o}
 CXX=c++
 CXXFLAGS=-std=c++98
