@@ -6,7 +6,7 @@
 /*   By: gkomba <gkomba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 12:18:58 by gkomba            #+#    #+#             */
-/*   Updated: 2025/03/20 12:51:19 by gkomba           ###   ########.fr       */
+/*   Updated: 2025/03/20 15:52:46 by gkomba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int main(int argc, char **argv)
         return (1);
     }
     Harl    Harl20;
-
     Harl20.complain(argv[1]);
     return (0);
 }
