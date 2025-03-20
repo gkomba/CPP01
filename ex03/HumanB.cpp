@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkomba <gkomba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/17 18:14:53 by gkomba            #+#    #+#             */
-/*   Updated: 2025/03/17 18:15:20 by gkomba           ###   ########.fr       */
+/*   Created: 2025/03/18 13:01:37 by gkomba            #+#    #+#             */
+/*   Updated: 2025/03/18 17:08:04 by gkomba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "HumanB.hpp"
+// HumanB(std::string Nname, Weapon Nweapon);
 
-Zombie  *newZombie(std::string name)
+HumanB::HumanB(std::string Nname) : name(Nname), weapon(NULL) {}
+
+void    HumanB::setWeapon(Weapon &Nweapon)
 {
-    Zombie *zombie = new Zombie(name);
-    return (zombie);
+    weapon = &Nweapon;
 }
+
+void    HumanB::attack(void)
+{
+    std::cout << name << " attacks with their " << weapon->getType() << std::endl;  
+}
+
+HumanB::~HumanB(){}

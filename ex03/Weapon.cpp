@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkomba <gkomba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/17 14:43:13 by gkomba            #+#    #+#             */
-/*   Updated: 2025/03/17 17:14:57 by gkomba           ###   ########.fr       */
+/*   Created: 2025/03/18 12:36:21 by gkomba            #+#    #+#             */
+/*   Updated: 2025/03/18 16:58:07 by gkomba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Weapon.hpp"
 
-Zombie::Zombie(std::string n)
+Weapon::Weapon(std::string Wtype) : type(Wtype) {}
+
+const std::string& Weapon::getType(void) const
 {
-    name = n;
+    return(type);
 }
 
-void    Zombie::announce(void)
+void Weapon::setType(std::string Ntype)
 {
-    std::cout << name << " BraiiiiiiinnnzzzZ..." << std::endl;
+    type = Ntype;
 }
 
-Zombie::~Zombie()
-{
-    std::cout << "Zombie " << name << " destruído" << std::endl;
-}
+Weapon::~Weapon(){}
+
