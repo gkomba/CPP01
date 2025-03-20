@@ -46,5 +46,3 @@ fcleant: clean
 ret: fcleant tester
 
 .PHONY: all clean fclean re tester cleant fcleant ret
-
-uid=101236(edalexan) gid=4224(2024_luanda) groups=204(_developer),4224(2024_luanda)

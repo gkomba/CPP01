@@ -6,7 +6,7 @@
 /*   By: gkomba <gkomba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 14:52:58 by gkomba            #+#    #+#             */
-/*   Updated: 2025/03/17 18:16:50 by gkomba           ###   ########.fr       */
+/*   Updated: 2025/03/20 20:57:59 by gkomba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int main()
 {
     Zombie  *zumbi;
-    
+
     zumbi = newZombie("Zumbi 1");
     zumbi->announce();
     randomChump("Zumbi 2");

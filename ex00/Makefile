@@ -9,8 +9,6 @@ CXX= c++
 CXXFLAGS=-std=c++98
 FLAGS=-Wall -Wextra -Werror
 
-
-
 all: ${NAME}
 
 ${NAME}: ${OBJS}
