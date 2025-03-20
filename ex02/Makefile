@@ -2,15 +2,15 @@ NAME=addressManipulation
 SRC=main.cpp
 
 OBJS=${SRC:.cpp=.o}
-CPP=c++
-CPPFLAGS=-std=c++98
+CXX=c++
+CXXFLAGS=-std=c++98
 FLAGS=-Wall -Wextra -Werror
 RM=rm -f
 
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-	${CPP} ${CPPFLAGS} ${FLAGS} -o ${NAME} ${OBJS}
+	${CXX} ${CXXFLAGS} ${FLAGS} -o ${NAME} ${OBJS}
 
 clean:
 	${RM} ${OBJS}

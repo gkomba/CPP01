@@ -5,8 +5,8 @@ SRC=Zombie.cpp\
 	randomChump.cpp\
 
 OBJS=${SRC:.cpp=.o}
-CPP= c++
-CPPFLAGS=-std=c++98
+CXX= c++
+CXXFLAGS=-std=c++98
 FLAGS=-Wall -Wextra -Werror
 
 
@@ -14,7 +14,7 @@ FLAGS=-Wall -Wextra -Werror
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-	${CPP} ${FLAGS} ${CPPFLAGS} -o ${NAME} ${OBJS}
+	${CXX} ${FLAGS} ${CXXFLAGS} -o ${NAME} ${OBJS}
 
 clean: 
 	rm -f ${OBJS}

@@ -5,15 +5,15 @@ SRC=main.cpp\
 	Weapon.cpp\
 
 OBJS=${SRC:.cpp=.o}
-CPP=c++
-CPPFLAGS=-std=c++98
+CXX=c++
+CXXFLAGS=-std=c++98
 FLAGS=-Wall -Wextra -Werror
 RM=rm -rf
 
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-	${CPP} ${CPPFLAGS} ${FLAGS} -o ${NAME} ${OBJS}
+	${CXX} ${CXXFLAGS} ${FLAGS} -o ${NAME} ${OBJS}
 
 clean:
 	${RM} ${OBJS}
